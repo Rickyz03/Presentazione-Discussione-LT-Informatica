@@ -6,6 +6,8 @@
 
 \usetheme{Padova}
 
+\graphicspath{ {images/} }
+
 \title{Migliorare la Business Intelligence con l'AI}
 \subtitle{Discussione di Laurea Triennale in Informatica}
 \author{Riccardo Stefani}
@@ -31,6 +33,11 @@
 			\item Duis aute irure dolor in reprehenderit in voluptate
 			\item Excepteur sint occaecat cupidatat non proident
 		\end{itemize}
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{oribea-logo.png}
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}{Introduzione - Il progetto}
@@ -45,13 +52,23 @@
 	\section{Analisi delle vendite}
 
 	\begin{frame}{Analisi delle vendite - L'idea}
-		Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+		\begin{columns}
+			\begin{column}{0.6\textwidth}
+				Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-		\begin{itemize}
-			\item Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-			\item Consectetur, adipisci velit, sed quia non numquam eius modi tempora
-			\item Incidunt ut labore et dolore magnam aliquam quaerat voluptatem
-		\end{itemize}
+				\begin{itemize}
+					\item Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+					\item Consectetur, adipisci velit, sed quia non numquam eius modi tempora
+					\item Incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{Oribea - Esempio di report delle vendite.png}
+				\end{figure}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 	\begin{frame}{Analisi delle vendite - Preprocessing, Language processing, statistiche e grafici}
@@ -119,16 +136,27 @@
 		\end{columns}
 	\end{frame}
 
-	\begin{frame}{Sistema di raccomandazione - Formato di archiviazione delle matrici}
-		Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
 
-		\begin{block}{Struttura dati}
-			\begin{itemize}
-				\item Matrici sparse per efficienza
-				\item Compressione dei dati
-				\item Indici per accesso rapido
-			\end{itemize}
-		\end{block}
+	\begin{frame}{Sistema di raccomandazione - Formato di archiviazione delle matrici}
+			\begin{columns}
+				\begin{column}{0.6\textwidth}
+					Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+
+					\begin{block}{Struttura dati}
+						\begin{itemize}
+							\item Matrici sparse per efficienza
+							\item Compressione dei dati
+							\item Indici per accesso rapido
+						\end{itemize}
+					\end{block}
+				\end{column}
+				\begin{column}{0.4\textwidth}
+					\begin{figure}
+						\centering
+						\includegraphics[width=\textwidth]{time_vs_memory.png}
+					\end{figure}
+				\end{column}
+			\end{columns}
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Rank Fusion}
@@ -197,6 +225,19 @@
 				\end{block}
 			\end{column}
 		\end{columns}
+
+		\begin{figure}
+			\centering
+			\begin{minipage}{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Frontend Sales Analysis.png}
+			\end{minipage}
+			\hspace{0.05\textwidth}
+			\begin{minipage}{0.2\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Frontend Recommendation.png}
+			\end{minipage}
+		\end{figure}
 	\end{frame}
 
 
@@ -250,7 +291,8 @@
 			
 			\vspace{2em}
 			
-			\textbf{Domande e discussione}
+			\Large
+			\textbf{Ci sono domande?}
 		\end{center}
 	\end{frame}
 
