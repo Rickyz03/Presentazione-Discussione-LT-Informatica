@@ -149,13 +149,23 @@
 	\section{Sistema di raccomandazione}
 
 	\begin{frame}{Sistema di raccomandazione - L'idea}
-		Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+		\begin{columns}
+			\begin{column}{0.6\textwidth}
+				\begin{block}{Obiettivo}
+					Combinare i vantaggi del \textbf{Collaborative Filtering} con quelli della \textbf{similarità basata su contenuto} per ottenere raccomandazioni più accurate e robuste.
+				\end{block}
 
-		\begin{itemize}
-			\item Omnis voluptas assumenda est, omnis dolor repellendus
-			\item Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
-			\item Saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae
-		\end{itemize}
+				\begin{block}{Approccio}
+					Implementazione di un algoritmo di \textbf{Rank Fusion}, utilizzando in particolare il \textbf{Reciprocal Rank Fusion (RRF)}, per combinare efficacemente i risultati dei due sistemi.
+				\end{block}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{Diagramma Pipeline sistema di raccomandazione.png}
+				\end{figure}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione -\\ Collaborative Filtering}
