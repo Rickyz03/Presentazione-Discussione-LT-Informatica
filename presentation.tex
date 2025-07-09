@@ -276,18 +276,29 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Metriche di valutazione}
-		Saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+		Il sistema di raccomandazione è stato valutato utilizzando \textbf{metriche pre-filtro} e \textbf{post-filtro}:
 
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
-				\begin{block}{Precisione}
-					$$ Precision@k = \frac{|R_k \cap T|}{k} $$
-				\end{block}
+				\begin{exampleblock}{Metriche pre-filtro}
+					Valutano le raccomandazioni \textbf{prima} del filtro sui prodotti già acquistati:
+					\begin{itemize}
+						\item \textbf{Recall@k}
+						\item \textbf{Precision@k}
+						\item \textbf{MAP@k}
+						\item \textbf{MRR@k}
+						\item \textbf{Unserendipity@k}
+					\end{itemize}
+				\end{exampleblock}
 			\end{column}
 			\begin{column}{0.5\textwidth}
-				\begin{block}{Recall}
-					$$ Recall@k = \frac{|R_k \cap T|}{|T|} $$
-				\end{block}
+				\begin{exampleblock}{Metriche post-filtro}
+					Valutano le raccomandazioni \textbf{dopo} il filtro sui prodotti già acquistati:
+					\begin{itemize}
+						\item \textbf{Average Item Similarity}
+						\item \textbf{Mean Popularity@k}
+					\end{itemize}
+				\end{exampleblock}
 			\end{column}
 		\end{columns}
 	\end{frame}
