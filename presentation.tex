@@ -395,18 +395,33 @@
 	\section{Ottimizzazione}
 
 	\begin{frame}{Ottimizzazione}
-		Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+		\textbf{Ottimizzazione} del preprocessing per \textbf{migliorare le performance}:
 
-		\begin{itemize}
-			\item Ottimizzazione delle performance
-			\item Riduzione dei costi computazionali
-			\item Miglioramento dell'accuratezza
-			\item Scalabilità del sistema
-		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{block}{Miglioramenti}
+					\begin{itemize}
+						\item Introduzione delle \textbf{Pandas Vectorized Ops}
+						\item Eliminazione delle operazioni \textbf{pandas.DataFrame.apply}
+						\item Miglioramento dell'algoritmo delle etichette
+					\end{itemize}
+				\end{block}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{exampleblock}{Risultati nei dataset testati}
+					\begin{itemize}
+						\item \textbf{Generale miglioramento} dei tempi di esecuzione
+						\item Miglioramento \textbf{medio} del \textbf{20\%}
+						\item Miglioramento \textbf{massimo} vicino al \textbf{40\%}
+					\end{itemize}
+				\end{exampleblock}
+			\end{column}
+		\end{columns}
 
-		\begin{exampleblock}{Risultati}
-			Omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis.
-		\end{exampleblock}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.65\textwidth]{Tabella risultati ottimizzazione.png}
+		\end{figure}
 	\end{frame}
 
 
