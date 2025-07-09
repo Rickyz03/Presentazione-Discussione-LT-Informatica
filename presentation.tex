@@ -327,16 +327,30 @@
 	\section{Deploy e frontend}
 
 	\begin{frame}{Deploy e frontend - Integrazione con\\ Google Cloud}
-		Aut perferendis doloribus asperiores repellat. Hic tenetur a sapiente delectus.
+		\textbf{Integrazione} con \textbf{Google Cloud Platform} per il deployment scalabile e gestione dei dati:
 
-		\begin{block}{Servizi utilizzati}
-			\begin{itemize}
-				\item Google Cloud Functions
-				\item Cloud Storage
-				\item Cloud SQL
-				\item Cloud Scheduler
-			\end{itemize}
-		\end{block}
+		\begin{columns}
+			\begin{column}{0.4\textwidth}
+				\begin{block}{Google Cloud Functions}
+					Implementazione di due funzioni serverless: \textbf{sales-analysis} e \textbf{recommendation-system}
+				\end{block}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\textwidth]{Google-Cloud-Functions.png}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.6\textwidth}
+				\begin{block}{Google Cloud Storage}
+					Archiviazione delle matrici di raccomandazione generate da \textbf{sales-analysis}, perchè siano prelevabili da \textbf{recommendation-system}
+				\end{block}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.45\textwidth]{Google-Cloud-Storage.png}
+				\end{figure}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 	\begin{frame}{Deploy e frontend - Interfacce frontend}
