@@ -220,7 +220,6 @@
 		\end{alertblock}
 	\end{frame}
 
-
 	\begin{frame}{Sistema di raccomandazione - Formato di archiviazione delle matrici}
         \textbf{Confronto} di \textbf{5 formati} di archiviazione per ottimizzare la lettura:
 
@@ -250,10 +249,29 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Rank Fusion}
-		Omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.
+		Il \textbf{Reciprocal Rank Fusion} combina efficacemente i ranking di diversi sistemi di raccomandazione:
 
-		\begin{alertblock}{Metodo di fusione}
-			$$ Score_{final} = \alpha \cdot Score_{CF} + \beta \cdot Score_{content} + \gamma \cdot Score_{hybrid} $$
+		\begin{columns}
+			\begin{column}{0.6\textwidth}
+				\begin{block}{Processo RRF}
+					\begin{itemize}
+						\item \textbf{Input}: Ranking da CF e Similarità
+						\item \textbf{Calcolo}: Score reciproco per posizione
+						\item \textbf{Fusione}: Somma dei punteggi
+						\item \textbf{Output}: Ranking finale unificato
+					\end{itemize}
+				\end{block}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{Reciprocal-Rank-Fusion.png}
+				\end{figure}
+			\end{column}
+		\end{columns}
+
+		\begin{alertblock}{Svantaggio}
+			Non considera i punteggi nei ranking di input, solo la loro posizione
 		\end{alertblock}
 	\end{frame}
 
