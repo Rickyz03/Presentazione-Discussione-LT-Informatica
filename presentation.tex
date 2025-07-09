@@ -222,25 +222,31 @@
 
 
 	\begin{frame}{Sistema di raccomandazione - Formato di archiviazione delle matrici}
-			\begin{columns}
-				\begin{column}{0.6\textwidth}
-					Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+        \textbf{Confronto} di \textbf{5 formati} di archiviazione per ottimizzare la lettura:
 
-					\begin{block}{Struttura dati}
-						\begin{itemize}
-							\item Matrici sparse per efficienza
-							\item Compressione dei dati
-							\item Indici per accesso rapido
-						\end{itemize}
-					\end{block}
-				\end{column}
-				\begin{column}{0.4\textwidth}
-					\begin{figure}
-						\centering
-						\includegraphics[width=\textwidth]{time_vs_memory.png}
-					\end{figure}
-				\end{column}
-			\end{columns}
+		\begin{columns}
+			\begin{column}{0.6\textwidth}
+				\begin{block}{Formati analizzati}
+					\begin{itemize}
+						\item \textbf{CSV}: Semplice ma inefficiente
+						\item \textbf{HDF5}: Form. binario strutturato
+						\item \textbf{NPY}: Nativo NumPy veloce
+						\item \textbf{Parquet}: Colonnare compresso
+						\item \textbf{Zarr}: Array n-dimensionali \textbf{cloud}
+					\end{itemize}
+				\end{block}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{time_vs_memory.png}
+				\end{figure}
+			\end{column}
+		\end{columns}
+
+		\begin{alertblock}{Risultato}
+			\textbf{Zarr} offre il miglior \textbf{compromesso} tra velocità e memoria
+		\end{alertblock}
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Rank Fusion}
