@@ -169,11 +169,29 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione -\\ Collaborative Filtering}
-		Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+		Un sistema di \textbf{Collaborative Filtering} sfrutta i comportamenti passati degli utenti per generare raccomandazioni.
 
-		\begin{block}{Algoritmo}
-			$$ R_{u,i} = \frac{\sum_{v \in N(u)} sim(u,v) \cdot R_{v,i}}{\sum_{v \in N(u)} |sim(u,v)|} $$
-		\end{block}
+		\begin{columns}
+			\begin{column}{0.6\textwidth}
+				\begin{block}{Principio base}
+					\begin{itemize}
+						\item Analizza \textbf{preferenze utenti simili}
+						\item Identifica \textbf{pattern di acquisto}
+						\item Predice \textbf{nuovi interessi}
+					\end{itemize}
+				\end{block}
+			\end{column}
+			\begin{column}{0.38\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{Collaborative-Filtering.png}
+				\end{figure}
+			\end{column}
+		\end{columns}
+
+		\begin{alertblock}{Logica}
+			"Gli utenti con \textbf{gusti simili} nel passato avranno \textbf{preferenze simili} in futuro"
+		\end{alertblock}
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Similarità}
