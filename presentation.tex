@@ -304,13 +304,23 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Explainability}
-		Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur.
+		\textbf{Explainability} del sistema di raccomandazione per \textbf{trasparenza decisionale}:
 
-		\begin{itemize}
-			\item Interpretabilità delle raccomandazioni
-			\item Trasparenza degli algoritmi
-			\item Giustificazione delle scelte
-		\end{itemize}
+		\begin{block}{Sistema implementato}
+			\begin{itemize}
+				\item \textbf{Logging} di ranking e punteggi
+				\begin{itemize}
+					\item \textbf{RRF} ranking e score finale
+					\item \textbf{Collaborative Filtering} ranking e punteggio
+					\item \textbf{Similarità} ranking e punteggio
+				\end{itemize}
+			\end{itemize}
+		\end{block}
+
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{Explainability - Log della task Recommendation System.png}
+		\end{figure}
 	\end{frame}
 
 
