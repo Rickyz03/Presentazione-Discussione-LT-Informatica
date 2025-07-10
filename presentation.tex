@@ -1,5 +1,7 @@
 \documentclass{beamer}
 
+\usepackage{svg}
+
 \makeatletter
 \def\input@path{{Padova/}}
 \makeatother
@@ -114,42 +116,42 @@
 
 		\begin{figure}
 			\centering
-			\includegraphics[width=\textwidth]{Diagramma pipeline analisi delle vendite.png}
+			\includesvg[width=\textwidth]{Diagramma pipeline analisi delle vendite.svg}
 		\end{figure}
 	\end{frame}
 
 	\begin{frame}{Analisi delle vendite - Formati di output\\ del report}
 		\textbf{Output dell'analisi}: Il report generato viene presentato all'utente in \textbf{multipli formati}:
 
-				\begin{columns}
-					\begin{column}{0.33\textwidth}
-						\begin{alertblock}{PDF}
-							Formato \textbf{professionale} per archiviazione e condivisione
-						\end{alertblock}
-						\begin{figure}
-							\centering
-							\includegraphics[width=0.7\textwidth]{Diagramma generazione report PDF ReportLab.png}
-						\end{figure}
-					\end{column}
-					\begin{column}{0.33\textwidth}
-						\begin{exampleblock}{HTML}
-							Visualizzazione \textbf{interattiva} e responsiva nel browser
-						\end{exampleblock}
-						\begin{figure}
-							\centering
-							\includegraphics[width=0.7\textwidth]{Diagramma generazione report HTML Jinja2.png}
-						\end{figure}
-					\end{column}
-					\begin{column}{0.33\textwidth}
-						\begin{block}{Email}
-							\textbf{Invio automatico} del report alla mail dell'utente
-						\end{block}
-						\begin{figure}
-							\centering
-							\includegraphics[width=0.95\textwidth]{Diagramma invio report via mail SMTP.png}
-						\end{figure}
-					\end{column}
-				\end{columns}
+		\begin{columns}
+			\begin{column}{0.33\textwidth}
+				\begin{alertblock}{PDF}
+					Formato \textbf{professionale} per archiviazione e condivisione
+				\end{alertblock}
+				\begin{figure}
+					\centering
+					\includesvg[width=0.7\textwidth]{Diagramma generazione report PDF ReportLab.svg}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.33\textwidth}
+				\begin{exampleblock}{HTML}
+					Visualizzazione \textbf{interattiva} e responsiva nel browser
+				\end{exampleblock}
+				\begin{figure}
+					\centering
+					\includesvg[width=0.7\textwidth]{Diagramma generazione report HTML Jinja2.svg}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.33\textwidth}
+				\begin{block}{Email}
+					\textbf{Invio automatico} del report alla mail dell'utente
+				\end{block}
+				\begin{figure}
+					\centering
+					\includesvg[width=0.95\textwidth]{Diagramma invio report via mail SMTP.svg}
+				\end{figure}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 
@@ -169,7 +171,7 @@
 			\begin{column}{0.4\textwidth}
 				\begin{figure}
 					\centering
-					\includegraphics[width=\textwidth]{Diagramma Pipeline sistema di raccomandazione.png}
+					\includesvg[width=\textwidth]{Diagramma Pipeline sistema di raccomandazione.svg}
 				\end{figure}
 			\end{column}
 		\end{columns}
