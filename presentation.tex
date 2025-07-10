@@ -57,22 +57,22 @@
 	\end{frame}
 
 	\begin{frame}{Introduzione - Il progetto}
-		\textbf{Scopo}: Automatizzare la \textbf{Business Intelligence} per e-commerce
+		\textbf{Scopo}: Automatizzare la \textbf{Business Intelligence} per \textbf{e-commerce}
 
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
 				\begin{block}{Analisi delle vendite}
 					\begin{itemize}
-						\item \textbf{Input:} Elenco di vendite di e-commerce
-						\item \textbf{Output:} Report automatico con statistiche e grafici
+						\item \textbf{Input:} Dati di vendite di e-commerce (\textbf{elenco degli acquisti})
+						\item \textbf{Output:} Report automatico con \textbf{statistiche} e \textbf{grafici}
 					\end{itemize}
 				\end{block}
 			\end{column}
 			\begin{column}{0.5\textwidth}
 				\begin{block}{Sistema di raccomandazione}
 					\begin{itemize}
-						\item \textbf{Input:} Storico acquisti clienti-prodotti, e nomi significativi dei prodotti
-						\item \textbf{Output:} Raccomandazioni personalizzate di prodotti e clienti
+						\item \textbf{Input:} \textbf{Storico acquisti} clienti-prodotti, e \textbf{nomi significativi} dei prodotti
+						\item \textbf{Output:} Raccomandazioni personalizzate di \textbf{prodotti} e \textbf{clienti}
 					\end{itemize}
 				\end{block}
 			\end{column}
@@ -106,11 +106,11 @@
 		\end{columns}
 
 		\vspace{0.5em}
-		Oribea ha fornito un \textbf{prototipo} di analisi delle vendite compiuta manualmente, visibile in figura, come base per lo sviluppo della soluzione automatizzata.
+		Oribea ha fornito un \textbf{prototipo} di analisi delle vendite compiuta \textbf{manualmente}, visibile in figura, come base da cui prendere \textbf{esempio} per lo sviluppo della \textbf{soluzione automatizzata}.
 	\end{frame}
 
 	\begin{frame}{Analisi delle vendite - Pipeline per la\\ generazione del report}
-		\textbf{Pipeline di elaborazione} per l'analisi automatizzata dei dati di vendita e la generazione del report:
+		\textbf{Pipeline} di elaborazione per l'\textbf{analisi automatizzata} dei dati di vendita e la \textbf{generazione del report}:
 
 		\begin{figure}
 			\centering
@@ -121,28 +121,35 @@
 	\begin{frame}{Analisi delle vendite - Formati di output\\ del report}
 		\textbf{Output dell'analisi}: Il report generato viene presentato all'utente in \textbf{multipli formati}:
 
-		\begin{columns}
-			\begin{column}{0.33\textwidth}
-				\begin{alertblock}{PDF}
-					Formato \textbf{professionale} per archiviazione e condivisione
-				\end{alertblock}
-			\end{column}
-			\begin{column}{0.33\textwidth}
-				\begin{exampleblock}{HTML}
-					Visualizzazione \textbf{interattiva} e responsiva nel browser
-				\end{exampleblock}
-			\end{column}
-			\begin{column}{0.33\textwidth}
-				\begin{block}{Email}
-					\textbf{Invio automatico} del report alla mail dell'utente
-				\end{block}
-			\end{column}
-		\end{columns}
-
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{Diagramma formati output del report.png}
-		\end{figure}
+				\begin{columns}
+					\begin{column}{0.33\textwidth}
+						\begin{alertblock}{PDF}
+							Formato \textbf{professionale} per archiviazione e condivisione
+						\end{alertblock}
+						\begin{figure}
+							\centering
+							\includegraphics[width=0.7\textwidth]{Diagramma generazione report PDF ReportLab.png}
+						\end{figure}
+					\end{column}
+					\begin{column}{0.33\textwidth}
+						\begin{exampleblock}{HTML}
+							Visualizzazione \textbf{interattiva} e responsiva nel browser
+						\end{exampleblock}
+						\begin{figure}
+							\centering
+							\includegraphics[width=0.7\textwidth]{Diagramma generazione report HTML Jinja2.png}
+						\end{figure}
+					\end{column}
+					\begin{column}{0.33\textwidth}
+						\begin{block}{Email}
+							\textbf{Invio automatico} del report alla mail dell'utente
+						\end{block}
+						\begin{figure}
+							\centering
+							\includegraphics[width=0.95\textwidth]{Diagramma invio report via mail SMTP.png}
+						\end{figure}
+					\end{column}
+				\end{columns}
 	\end{frame}
 
 
@@ -201,9 +208,9 @@
 			\begin{column}{0.6\textwidth}
 				\begin{block}{Principio base}
 					\begin{itemize}
-						\item Analizza \textbf{nomi descrittivi} dei prodotti
-						\item Calcola \textbf{Cosine Similarity}
-						\item Identifica \textbf{prodotti simili}
+						\item Analizza i \textbf{nomi descrittivi} dei prodotti
+						\item Calcola la \textbf{Cosine Similarity}
+						\item Identifica i \textbf{prodotti simili}
 					\end{itemize}
 				\end{block}
 			\end{column}
@@ -221,7 +228,7 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Formato di archiviazione delle matrici}
-        \textbf{Confronto} di \textbf{5 formati} di archiviazione per ottimizzare la lettura:
+        \textbf{Confronto} di \textbf{5 formati} per ottimizzare l'archiviazione matrici:
 
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
@@ -249,7 +256,7 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Rank Fusion}
-		Il \textbf{Reciprocal Rank Fusion} combina efficacemente i ranking di diversi sistemi di raccomandazione:
+		Il \textbf{Reciprocal Rank Fusion (RRF)} combina efficacemente i ranking di diversi sistemi di raccomandazione:
 
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
@@ -304,16 +311,14 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Explainability}
-		\textbf{Explainability} del sistema di raccomandazione per \textbf{trasparenza decisionale}:
+		\textbf{Explainability} del sistema di raccomandazione per \textbf{trasparenza decisionale}, disponibile solo per l'\textbf{admin}:
 
-		\begin{alertblock}{Sistema implementato}
+		\begin{alertblock}{Sistema di Explainability implementato}
+			\textbf{Logging} di ranking e punteggio in tutte le classifiche generate, per ciascun prodotto o utente raccomandato:
 			\begin{itemize}
-				\item \textbf{Logging} di ranking e punteggi
-				\begin{itemize}
-					\item \textbf{RRF} ranking e score finale
-					\item \textbf{Collaborative Filtering} ranking e punteggio
-					\item \textbf{Similarità} ranking e punteggio
-				\end{itemize}
+				\item \textbf{RRF}: ranking e score finale
+				\item \textbf{Collaborative Filtering}: ranking e punteggio
+				\item \textbf{Similarità}: ranking e punteggio
 			\end{itemize}
 		\end{alertblock}
 
@@ -354,7 +359,7 @@
 	\end{frame}
 
 	\begin{frame}{Deploy e frontend - Interfacce frontend}
-		Sviluppo di interfacce frontend dedicate per i sistemi implementati:
+		Sviluppo di \textbf{interfacce frontend} dedicate per entrambe le task, cioè sviluppo di \textbf{form} per l'invio dei dati:
 
 		\begin{columns}
 			\begin{column}{0.64\textwidth}
@@ -403,7 +408,7 @@
 					\begin{itemize}
 						\item Introduzione delle \textbf{Pandas Vectorized Ops}
 						\item Eliminazione delle operazioni \textbf{pandas.DataFrame.apply}
-						\item Miglioramento dell'algoritmo delle etichette
+						\item Miglioramento dell'algoritmo delle \textbf{etichette}
 					\end{itemize}
 				\end{block}
 			\end{column}
@@ -428,7 +433,7 @@
 	\section{Conclusioni e considerazioni finali}
 
 	\begin{frame}{Conclusioni e considerazioni finali}
-		Il periodo di \textbf{stage} presso Oribea si è concluso con \textbf{successo}, raggiungendo \textbf{tutti gli obiettivi} prefissati e \textbf{migliorando la Business Intelligence} aziendale.
+		Il periodo di \textbf{stage} presso Oribea si è concluso con \textbf{successo}, raggiungendo \textbf{tutti gli obiettivi} prefissati e \textbf{migliorando la Business Intelligence} delle aziende clienti delle task.
 
 		\begin{columns}
 			\begin{column}{0.48\textwidth}
@@ -436,7 +441,7 @@
 					\begin{itemize}
 						\item Implementata task di \textbf{analisi vendite}
 						\item Implementata task di \textbf{raccomandazione}
-						\item Sviluppate \textbf{interfacce frontend} per collegamento diretto da sito
+						\item Sviluppate \textbf{interfacce frontend} per collegamento diretto da sito e-commerce
 					\end{itemize}
 				\end{block}
 			\end{column}
