@@ -30,23 +30,23 @@
 
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
-				\begin{block}{Mission}
+				\begin{alertblock}{Mission}
 					\begin{itemize}
 						\item Soluzioni \textbf{AI avanzate}
 						\item Migliorare \textbf{efficienza aziendale}
 						\item Focus su \textbf{LLM}
 						\item \textbf{Agenti intelligenti}
 					\end{itemize}
-				\end{block}
+				\end{alertblock}
 			\end{column}
 			\begin{column}{0.5\textwidth}
-				\begin{block}{Prodotti principali}
+				\begin{exampleblock}{Prodotti principali}
 					\begin{itemize}
 						\item Automazione \textbf{processi aziendali}
 						\item \textbf{AI Task Builder}
 						\item \textbf{AI Chatbot Builder}
 					\end{itemize}
-				\end{block}
+				\end{exampleblock}
 			\end{column}
 		\end{columns}
 
@@ -123,14 +123,14 @@
 
 		\begin{columns}
 			\begin{column}{0.33\textwidth}
-				\begin{block}{PDF}
+				\begin{alertblock}{PDF}
 					Formato \textbf{professionale} per archiviazione e condivisione
-				\end{block}
+				\end{alertblock}
 			\end{column}
 			\begin{column}{0.33\textwidth}
-				\begin{block}{HTML}
+				\begin{exampleblock}{HTML}
 					Visualizzazione \textbf{interattiva} e responsiva nel browser
-				\end{block}
+				\end{exampleblock}
 			\end{column}
 			\begin{column}{0.33\textwidth}
 				\begin{block}{Email}
@@ -151,13 +151,13 @@
 	\begin{frame}{Sistema di raccomandazione - L'idea}
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
-				\begin{block}{Obiettivo}
+				\begin{alertblock}{Obiettivo}
 					Combinare i vantaggi del \textbf{Collaborative Filtering} con quelli della \textbf{similarità basata su contenuto} per ottenere raccomandazioni più accurate e robuste.
-				\end{block}
+				\end{alertblock}
 
-				\begin{block}{Approccio}
+				\begin{exampleblock}{Approccio}
 					Implementazione di un algoritmo di \textbf{Rank Fusion}, utilizzando in particolare il \textbf{Reciprocal Rank Fusion (RRF)}, per combinare efficacemente i risultati dei due sistemi, archiviati come \textbf{matrici}.
-				\end{block}
+				\end{exampleblock}
 			\end{column}
 			\begin{column}{0.4\textwidth}
 				\begin{figure}
@@ -306,7 +306,7 @@
 	\begin{frame}{Sistema di raccomandazione - Explainability}
 		\textbf{Explainability} del sistema di raccomandazione per \textbf{trasparenza decisionale}:
 
-		\begin{block}{Sistema implementato}
+		\begin{alertblock}{Sistema implementato}
 			\begin{itemize}
 				\item \textbf{Logging} di ranking e punteggi
 				\begin{itemize}
@@ -315,7 +315,7 @@
 					\item \textbf{Similarità} ranking e punteggio
 				\end{itemize}
 			\end{itemize}
-		\end{block}
+		\end{alertblock}
 
 		\begin{figure}
 			\centering
@@ -330,20 +330,20 @@
 		\textbf{Integrazione} con \textbf{Google Cloud Platform} per il deployment scalabile e gestione dei dati:
 
 		\begin{columns}
-			\begin{column}{0.4\textwidth}
-				\begin{block}{Google Cloud Functions}
+			\begin{column}{0.42\textwidth}
+				\begin{exampleblock}{Google Cloud Functions}
 					Implementazione di due funzioni serverless: \textbf{sales-analysis} e \textbf{recommendation-system}
-				\end{block}
+				\end{exampleblock}
 				
 				\begin{figure}
 					\centering
 					\includegraphics[width=0.8\textwidth]{Google-Cloud-Functions.png}
 				\end{figure}
 			\end{column}
-			\begin{column}{0.6\textwidth}
-				\begin{block}{Google Cloud Storage}
+			\begin{column}{0.58\textwidth}
+				\begin{exampleblock}{Google Cloud Storage}
 					Archiviazione delle matrici di raccomandazione generate da \textbf{sales-analysis}, perchè siano prelevabili da \textbf{recommendation-system}
-				\end{block}
+				\end{exampleblock}
 				
 				\begin{figure}
 					\centering
@@ -358,24 +358,24 @@
 
 		\begin{columns}
 			\begin{column}{0.64\textwidth}
-				\begin{block}{Funzionalità}
+				\begin{exampleblock}{Funzionalità}
 					\begin{itemize}
 						\item \textbf{Integrazione diretta} nel sito dell'e-commerce
 						\item \textbf{Validazione} dell'input
 						\item Interfaccia \textbf{dedicata}, non generale
 						\item Gestione \textbf{dinamica} del submit
 					\end{itemize}
-				\end{block}
+				\end{exampleblock}
 			\end{column}
 			\begin{column}{0.36\textwidth}
-				\begin{block}{Tecnologie}
+				\begin{alertblock}{Tecnologie}
 					\begin{itemize}
 						\item React
 						\item React Hook Form
 						\item Zod
 						\item Shadcn/ui
 					\end{itemize}
-				\end{block}
+				\end{alertblock}
 			\end{column}
 		\end{columns}
 
