@@ -157,14 +157,18 @@
 	\section{Sistema di raccomandazione}
 
 	\begin{frame}{Sistema di raccomandazione - L'idea}
+        \begin{alertblock}{Obiettivo}
+			Ottenere \textbf{buone raccomandazioni} per \textbf{utenti} e \textbf{prodotti} specifici.
+		\end{alertblock}
+
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
-				\begin{alertblock}{Obiettivo}
-					Combinare i vantaggi del \textbf{Collaborative Filtering} con quelli della \textbf{similarità basata su contenuto} per ottenere raccomandazioni più accurate e robuste.
-				\end{alertblock}
-
 				\begin{exampleblock}{Approccio}
-					Implementazione di un algoritmo di \textbf{Rank Fusion}, utilizzando in particolare il \textbf{Reciprocal Rank Fusion (RRF)}, per combinare efficacemente i risultati dei due sistemi, archiviati come \textbf{matrici}.
+					\begin{itemize}
+						\item \textbf{Collaborative Filtering} per sfruttare i comportamenti passati degli utenti
+						\item \textbf{Similarità basata su contenuto} per analizzare le caratteristiche semantiche dei prodotti
+						\item \textbf{Reciprocal Rank Fusion (RRF)} per combinare efficacemente i risultati dei due approcci precedenti
+					\end{itemize}
 				\end{exampleblock}
 			\end{column}
 			\begin{column}{0.4\textwidth}
