@@ -167,14 +167,14 @@
 
 	\begin{frame}{Sistema di raccomandazione - L'idea}
         \begin{alertblock}{Obiettivo}
-			Ottenere \textbf{buone raccomandazioni} per \textbf{utenti} e \textbf{prodotti} specifici.
+			Ottenere \textbf{buone raccomandazioni} per \textbf{clienti} e \textbf{prodotti} specifici.
 		\end{alertblock}
 
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
 				\begin{exampleblock}{Approccio}
 					\begin{itemize}
-						\item \textbf{Collaborative Filtering} per sfruttare i comportamenti passati degli utenti
+						\item \textbf{Collaborative Filtering} per sfruttare i comportamenti passati dei clienti
 						\item \textbf{Similarità basata su contenuto} per analizzare le caratteristiche semantiche dei prodotti
 						\item \textbf{Reciprocal Rank Fusion (RRF)} per combinare efficacemente i risultati dei due approcci precedenti
 					\end{itemize}
@@ -190,13 +190,13 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione -\\ Collaborative Filtering}
-		Un sistema di \textbf{Collaborative Filtering} sfrutta i comportamenti passati degli utenti per generare raccomandazioni.
+		Un sistema di \textbf{Collaborative Filtering} sfrutta i comportamenti passati dei clienti per generare raccomandazioni.
 
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
 				\begin{block}{Principio base}
 					\begin{itemize}
-						\item Analizza \textbf{preferenze utenti simili}
+						\item Analizza \textbf{preferenze clienti simili}
 						\item Identifica \textbf{pattern di acquisto}
 						\item Predice \textbf{nuovi interessi}
 					\end{itemize}
@@ -211,7 +211,7 @@
 		\end{columns}
 
 		\begin{alertblock}{Logica}
-			"Gli utenti con \textbf{gusti simili} nel passato avranno \textbf{preferenze simili} in futuro"
+			"I clienti con \textbf{gusti simili} nel passato avranno \textbf{preferenze simili} in futuro"
 		\end{alertblock}
 	\end{frame}
 
@@ -328,7 +328,7 @@
 		\textbf{Explainability} del sistema di raccomandazione per \textbf{trasparenza decisionale}, disponibile solo per l'\textbf{admin}:
 
 		\begin{alertblock}{Sistema di Explainability implementato}
-			\textbf{Logging} di ranking e punteggio in tutte le classifiche generate, per ciascun prodotto o utente raccomandato:
+			\textbf{Logging} di ranking e punteggio in tutte le classifiche generate, per ciascun prodotto o cliente raccomandato:
 			\begin{itemize}
 				\item \textbf{RRF}: ranking e score finale
 				\item \textbf{Collaborative Filtering}: ranking e punteggio
