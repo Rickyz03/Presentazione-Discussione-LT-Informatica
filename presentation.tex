@@ -129,31 +129,40 @@
 	\end{frame}
 
 	\begin{frame}{Analisi delle vendite - Formati di output\\ del report}
-		\textbf{Output dell'analisi}: Il report generato viene presentato all'utente in \textbf{multipli formati}:
+		Il \textbf{report} generato viene presentato all'utente in \textbf{multipli formati}:
 
 		\begin{columns}
 			\begin{column}{0.33\textwidth}
 				\begin{alertblock}{PDF}
 					Formato \textbf{professionale} per archiviazione e condivisione
 				\end{alertblock}
+			\end{column}
+			\begin{column}{0.33\textwidth}
+				\begin{exampleblock}{HTML}
+					Visualizzazione \textbf{interattiva} e responsiva nel browser
+				\end{exampleblock}
+			\end{column}
+			\begin{column}{0.33\textwidth}
+				\begin{block}{Email}
+					\textbf{Invio automatico} del report alla mail dell'utente
+				\end{block}
+			\end{column}
+		\end{columns}
+
+		\begin{columns}
+			\begin{column}{0.33\textwidth}
 				\begin{figure}
 					\centering
 					\includegraphics[width=0.7\textwidth]{Diagramma generazione report PDF ReportLab.png}
 				\end{figure}
 			\end{column}
 			\begin{column}{0.33\textwidth}
-				\begin{exampleblock}{HTML}
-					Visualizzazione \textbf{interattiva} e responsiva nel browser
-				\end{exampleblock}
 				\begin{figure}
 					\centering
 					\includegraphics[width=0.7\textwidth]{Diagramma generazione report HTML Jinja2.png}
 				\end{figure}
 			\end{column}
 			\begin{column}{0.33\textwidth}
-				\begin{block}{Email}
-					\textbf{Invio automatico} del report alla mail dell'utente
-				\end{block}
 				\begin{figure}
 					\centering
 					\includegraphics[width=0.95\textwidth]{Diagramma invio report via mail SMTP.png}
@@ -190,7 +199,7 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione -\\ Collaborative Filtering}
-		Un sistema di \textbf{Collaborative Filtering} sfrutta i comportamenti passati dei clienti per generare raccomandazioni.
+		Un sistema di \textbf{Collaborative Filtering} sfrutta i comportamenti passati dei clienti per generare raccomandazioni:
 
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
@@ -216,7 +225,7 @@
 	\end{frame}
 
 	\begin{frame}{Sistema di raccomandazione - Similarità}
-		Un sistema di \textbf{Similarità} sfrutta le caratteristiche semantiche dei prodotti per generare raccomandazioni.
+		Un sistema di \textbf{Similarità} sfrutta le caratteristiche semantiche dei prodotti per generare raccomandazioni:
 
 		\begin{columns}
 			\begin{column}{0.6\textwidth}
@@ -328,7 +337,7 @@
 		\textbf{Explainability} del sistema di raccomandazione per \textbf{trasparenza decisionale}, disponibile solo per l'\textbf{admin}:
 
 		\begin{alertblock}{Sistema di Explainability implementato}
-			\textbf{Logging} di rank e punteggio in tutte le classifiche generate, per ciascun prodotto o cliente raccomandato:
+			Per ciascun prodotto o cliente raccomandato, configurato un \textbf{logging} di rank e punteggio in tutte le classifiche generate:
 			\begin{itemize}
 				\item \textbf{RRF}: rank e score finale
 				\item \textbf{Collaborative Filtering}: rank e punteggio
